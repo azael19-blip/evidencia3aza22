@@ -34,3 +34,16 @@ class CuentaBancaria:
 
     def set_banco(self, banco):
         self.__banco = banco
+        
+    def depositar(self, cantidad):
+        if cantidad > 0:
+            self.__saldo += cantidad
+
+    def retirar(self, cantidad):
+        if cantidad <= self.__saldo:
+            self.__saldo -= cantidad
+        else:
+            print("Fondos insuficientes")
+
+    def info(self):
+        print(f"Titular: {self._titular}, Cuenta: {self.numero_cuenta}, Saldo: {self.saldo}, Tipo: {self.tipo_cuenta}, Banco: {self._banco}")
