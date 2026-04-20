@@ -48,3 +48,7 @@ class CuentaBancaria:
 
 cuenta1 = CuentaBancaria("Brandon",23452,3000,"Ahorro","Afirme")
 cuenta1.info() 
+
+cuenta1.depositar(1500)
+cuenta1.retirar(2000)
+print("Saldo actual:", cuenta1.get_saldo())
