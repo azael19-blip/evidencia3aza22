@@ -43,3 +43,5 @@ class CuentaBancaria:
             self.__saldo -= cantidad
         else:
             print("Fondos insuficientes")
+    def info(self):
+        print(f"Titular: {self._titular}, Cuenta: {self.numero_cuenta}, Saldo: {self.saldo}, Tipo: {self.tipo_cuenta}, Banco: {self._banco}")
