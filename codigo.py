@@ -45,3 +45,6 @@ class CuentaBancaria:
             print("Fondos insuficientes")
     def info(self):
         print(f"Titular: {self._titular}, Cuenta: {self.numero_cuenta}, Saldo: {self.saldo}, Tipo: {self.tipo_cuenta}, Banco: {self._banco}")
+
+cuenta1 = CuentaBancaria("Brandon",23452,3000,"Ahorro","Afirme")
+cuenta1.info() 
